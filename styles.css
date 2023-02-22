@@ -1,0 +1,60 @@
+body {
+    background-color: #1C82AD;
+}
+
+div {
+    text-align: center;
+    height: 100vh;
+}
+
+#header {
+    position: relative;
+    left: 0px;
+    top: 80px;
+}
+
+button {
+    position: relative;
+    top: 400px;
+}
+
+#complex {
+    right: 0px;
+    top: 170px;
+}
+
+#simple {
+    right: 0px;
+    top: 170px;
+}
+
+#num {
+    right: 0px;
+    top: 170px;
+}
+
+p {
+    position: relative;
+    left: 0px;
+    top: 300px;
+}
+
+@media (max-width: 640px) {
+    #header {
+      font-size: 28px;
+    }
+    
+    button {
+      max-width: 100%;
+    }
+    
+    #complex, #simple, #num {
+      max-width: 100%;
+      margin: 0 auto 10px;
+    }
+    
+    #pass-el {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }

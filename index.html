@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Password Generator</title>
+</head>
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- tailwind css -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            wowzer: '#03C988',
+            prep: '#00337C'
+          }
+        }
+      }
+    }
+  </script>
+
+<style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+
+      .btn {
+        @apply rounded py-2 px-4 bg-wowzer font-semibold shadow-md hover:bg-prep focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75
+      }
+
+      .meader {
+        @apply p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4 font-semibold
+      }
+    }
+  </style>
+<body>
+    
+
+    <div>
+        <h1 class="meader" id="header">Keaton's Fun Password Generator</h1>
+
+            <button class="btn" id="complex">Complex Password</button>
+            <button class="btn" id="simple">Simple Password</button>
+            <button class="btn" id="num">Just Numbers</button>
+        
+        <p id="pass-el">Password will appear hear</p>
+    </div>
+    
+     
+
+<script src="index.js"></script>
+</body>
+</html>
